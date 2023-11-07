@@ -1,8 +1,6 @@
-document.getElementById('showAlert').addEventListener('click', function () {
-    Swal.fire({
-        title: 'Hello, SweetAlert!',
-        text: 'This is a custom SweetAlert dialog.',
-        icon: 'success', // You can use 'success', 'error', 'info', 'warning', etc.
-        confirmButtonText: 'OK'
-    });
-});
+function area(base,height) {
+    document.write(`${0.5 * height * base}`);
+}
+let base = parseFloat((prompt`plz enter base to calc area`));
+let height = parseFloat((prompt`plz enter height number to calc area`));
+area(base,height);

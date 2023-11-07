@@ -1,8 +1,12 @@
-document.getElementById('showAlert').addEventListener('click', function () {
-    Swal.fire({
-        title: 'Hello, SweetAlert!',
-        text: 'This is a custom SweetAlert dialog.',
-        icon: 'success', // You can use 'success', 'error', 'info', 'warning', etc.
-        confirmButtonText: 'OK'
-    });
-});
+let num = 1;
+for (let i = 1; i <= 4; i++) {
+    let line = "";
+    for (let j = 1; j <= 4; j++) {
+        line += num;
+        num++;
+        if (i == j) {
+            break;
+        }
+    }
+    console.log(line);
+}
