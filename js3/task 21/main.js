@@ -8,7 +8,7 @@ function randomBetweenNumbers(num1, num2) {
         max = Math.floor(num2);
     }
     
-    return Math.random() * (max - min + 1) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 document.write(randomBetweenNumbers(1, 8));
